@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym website</title>
+    <style>
+        /* CSS RESET  */
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gyms.jpg');
+            height: 1000px;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+
+            display: inline-block;
+            position: absolute;
+            /* margin:14px; */
+            left: 40px;
+            top: 20px;
+
+        }
+
+        .left img {
+            width: 100px;
+           
+        }
+
+        .left div {
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .mid {
+            text-decoration: none;
+
+            width: 50%;
+            margin: 29px auto;
+            display:block;
+            /* border:2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            /* border: 3px solid indianred; */
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+            /*it allow us to set the width and height on the element also the top and bottom margins*/
+        }
+
+        .navbar li {
+            font-size: 20px;
+            
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            /* font-size: 15px; */
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: darkblue;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 10px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 10px;
+            cursor: pointer;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .btn:hover {
+            background-color: indianred;
+
+        }
+
+        div.container {
+            /* border: 1px solid red; */
+            margin: 100px 30px;
+            padding: 4px;
+            width: 40%;
+            border-radius: 5px solid blue;
+
+
+
+        }
+
+        .formgroups input {
+            text-align: center;
+            display: block;
+            padding: 1px;
+            width: 400px;
+            font-size: 15px;
+            border-radius: 3px solid black;
+            margin: 8px auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container h4 {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .container button {
+            display: block;
+            width: 340px;
+            margin: 3px auto;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1><strong>WELCOME TO GYM </strong></h1> -->
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logym.jpg" alt="error in loading">
+            <div>Fitness Gym</div>
+
+
+
+
+
+
+        </div>
+        <!-- middle for navigation -->
+        <div class="mid">
+            <!-- i am mid -->
+            <ul class="navbar">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+
+        </div>
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call us now</button><button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h4>Join the best gym</h4>
+        <div class="formgroups">
+            <form action="noaction.php">
+                <input type="text" name="" placeholder="enter your name">
+                <input type="text" name="" placeholder="enter your age">
+                <input type="text" name="" placeholder="enter your gender">
+                
+                <input type="text" name="" placeholder="enter your contact no">
+
+        </div>
+        <button class="btn">Submit</button>
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
